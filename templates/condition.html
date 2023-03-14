@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statements</title>
+</head>
+<body>
+    <center>
+        <h1>conditional statements</h1>
+    
+        
+        <h1 style="background-color: blueviolet;">if condition</h1>
+        {% if condition %}
+            <h1 style="color: blue;">statement of if block</h1>
+        {% endif %}
+    </center>
+    <center>
+        <h1>if-else condition</h1>
+        {% if a > b %}
+        <h1>it is if condition</h1>
+        {% else %}
+        <h1 style="background-color: aquamarine;">it is else condition
+        </h1>
+        {% endif %}
+
+    </center>
+    <center>
+        <h1>if-elif-else condition</h1>
+        {% if a > b %}
+        <h1> a is max</h1>
+        {% elif b > c %}
+        <h1>b is max</h1>
+        {% else %}
+        <h1>c is max</h1>
+        {% endif %}
+
+    </center>
+    <center>
+        <h1>nested if condition</h1>
+        {% if a > b %} 
+             if a ia max
+             {% if a > c %}
+                 a is max
+             {% else %} 
+                 c is max
+             {% endif %}
+        {% else %} 
+             {% if b > c %} 
+                <h1 style="background-color: goldenrod;">b is max</h1>
+             {% else %}
+                 c is max
+             {% endif %} 
+        {% endif %}
+           
+    </center>
+</body>
+</html>
